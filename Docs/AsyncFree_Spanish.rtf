@@ -1,0 +1,853 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang3082\deflangfe3082{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}{\f11\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}MS Sans Serif;}{\f141\froman\fcharset238\fprq2 Times New Roman CE;}{\f142\froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\f144\froman\fcharset161\fprq2 Times New Roman Greek;}{\f145\froman\fcharset162\fprq2 Times New Roman Tur;}{\f146\froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\f147\froman\fcharset178\fprq2 Times New Roman (Arabic);}
+{\f148\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f149\fswiss\fcharset238\fprq2 Arial CE;}{\f150\fswiss\fcharset204\fprq2 Arial Cyr;}{\f152\fswiss\fcharset161\fprq2 Arial Greek;}{\f153\fswiss\fcharset162\fprq2 Arial Tur;}
+{\f154\fswiss\fcharset177\fprq2 Arial (Hebrew);}{\f155\fswiss\fcharset178\fprq2 Arial (Arabic);}{\f156\fswiss\fcharset186\fprq2 Arial Baltic;}{\f157\fmodern\fcharset238\fprq1 Courier New CE;}{\f158\fmodern\fcharset204\fprq1 Courier New Cyr;}
+{\f160\fmodern\fcharset161\fprq1 Courier New Greek;}{\f161\fmodern\fcharset162\fprq1 Courier New Tur;}{\f162\fmodern\fcharset177\fprq1 Courier New (Hebrew);}{\f163\fmodern\fcharset178\fprq1 Courier New (Arabic);}
+{\f164\fmodern\fcharset186\fprq1 Courier New Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;
+\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\ql \li0\ri0\widctlpar\nooverflow\faroman\rin0\lin0\itap0 
+\fs24\lang11274\langfe3082\cgrid\langnp11274\langfenp3082 \snext0 Normal;}{\*\cs10 \additive Default Paragraph Font;}{\s15\ql \li0\ri0\widctlpar\tqc\tx4252\tqr\tx8504\nooverflow\faroman\rin0\lin0\itap0 
+\fs24\lang11274\langfe3082\cgrid\langnp11274\langfenp3082 \sbasedon0 \snext15 header;}{\s16\ql \li0\ri0\widctlpar\tqc\tx4252\tqr\tx8504\nooverflow\faroman\rin0\lin0\itap0 \fs24\lang11274\langfe3082\cgrid\langnp11274\langfenp3082 \sbasedon0 \snext16 
+footer;}}{\info{\title La biblioteca de AsyncFree}{\subject Comunicacion Serial}{\author MARIO}{\operator MARIO MARTINS}{\creatim\yr1999\mo12\dy10\hr16\min41}{\revtim\yr1999\mo12\dy10\hr16\min41}{\version2}{\edmins0}{\nofpages16}{\nofwords4589}
+{\nofchars26158}{\*\company MARTINS COMPUTACION}{\nofcharsws32123}{\vern8249}}\margl567\margr567\margt454\margb714 
+\widowctrl\ftnbj\aenddoc\hyphhotz425\makebackup\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\lytprtmet\hyphcaps0\horzdoc\dghspace120\dgvspace120\dghorigin1701\dgvorigin1984\dghshow1\dgvshow0
+\jexpand\viewkind1\viewscale100\pgbrdrhead\pgbrdrfoot\bdrrlswsix\nolnhtadjtbl\oldas \fet0\sectd \psz1\linex0\headery113\footery0\sectdefaultcl {\header \pard\plain \s15\qr \li0\ri0\widctlpar\tqc\tx4252\tqr\tx8504\nooverflow\faroman\rin0\lin0\itap0 
+\fs24\lang11274\langfe3082\cgrid\langnp11274\langfenp3082 {\tab \tab }{\field{\*\fldinst { DATE \\@ "dd/MM/yy" }}{\fldrslt {\lang1024\langfe1024\noproof 10/12/99}}}{  P\'e1gina }{\field{\*\fldinst { PAGE }}{\fldrslt {\lang1024\langfe1024\noproof 1}}}{ de 
+}{\field{\*\fldinst { NUMPAGES }}{\fldrslt {\lang1024\langfe1024\noproof 16}}}{  }{\field{\*\fldinst { FILENAME }}{\fldrslt {\lang1024\langfe1024\noproof AsyncFree_Es_Final.doc}}}{
+\par }}{\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}
+{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8
+\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \qc \li0\ri0\sl240\slmult0\nowidctlpar\nooverflow\faroman\rin0\lin0\itap0 
+\fs24\lang11274\langfe3082\cgrid\langnp11274\langfenp3082 {\b\f1\fs40\cf1 La biblioteca de AsyncFree}{\f2\fs18\cf2 
+\par }\pard \ql \li0\ri0\sl240\slmult0\nowidctlpar\nooverflow\faroman\rin0\lin0\itap0 {\f2\fs18\cf2 
+\par }{\b\f1\fs20\cf1 Las convenciones del documento (el formato del texto y colores):}{\f1\fs20\cf1 
+\par 
+\par El texto standard
+\par }{\f1\fs20\ul\cf1 El texto importante (las advertencias etc.)
+\par }{\b\f1\fs20\cf1 La descripci\'f3n del componente}{\f1\fs20\ul\cf1 
+\par }{\f2\fs18\cf2 Public methods and properties
+\par }{\f2\fs18\cf12 Published properties
+\par }{\f2\fs18\cf6 Published events}{\f2\fs18\cf1 
+\par 
+\par }{\fs20\cf1 {\*\shppict{\pict{\*\picprop\shplid1025{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fLayoutInCell}{\sv 1}}}\picscalex96\picscaley96\piccropl0\piccropr0\piccropt0\piccropb0
+\picw517\pich517\picwgoal293\pichgoal293\pngblip\bliptag-456465974{\*\blipuid e4cae1cae519cd7888f61ac3351c9e2e}89504e470d0a1a0a0000000d4948445200000018000000180403000000125920cb00000001735247420240c07dc500000030504c54450000000000800000ff80
+0000800080ff0000ff00ff008000008080808000808080c0c0c000ff0000ffffffff00ffffffbac2394f0000000970485973000012220000122201e8500e4000
+0000564944415428cf63d88d0418f070b6a5811090c80672b2776703119c03e603012607a42c7bdbee6cb801500e6e7b363040013790c3a404050a189c4f508029a30f0160ce06980cc834983a05b0a51b60d6e0750e2e0e004bb399adbc64028e0000000049454e44ae426082}}{\nonshppict
+{\pict\picscalex97\picscaley97\piccropl0\piccropr0\piccropt0\piccropb0\picw517\pich517\picwgoal293\pichgoal293\wmetafile8\bliptag-456465974\blipupi117{\*\blipuid e4cae1cae519cd7888f61ac3351c9e2e}
+010009000003f40000000000d200000000000400000003010800050000000b0200000000050000000c02180018000400000007010400d2000000430f2000cc00
+00001800180000000000180018000000000028000000180000001800000001000400000000002001000022120000221200001000000010000000000000008000
+0000ff00000000008000800080000000ff00ff00ff0000800000808000000080800080808000c0c0c00000ff0000ffff000000ffff00ffffff00bbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb00000000000000bbbbbbbbb0222222222222220
+bbbbbbb022222222222222220bbbbb022f2f2f2f2f2f2f2220bbbb02222222222222222220bbbb02f2f2f2f2f2f2f2f220bbbb02222222222222222220bbbb02
+222222222222222220bbbbb000000000000000000bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb666bbb666bb6bb6bb6bbbbb6bbb6b6bbb
+6b6bb6bb6bbbbb6bbbbb6bbb6b6b6b6b6bbbbb6bbbbb6bbb6b6b6b6b6bbbbb6bbb6b6bbb6b66bbb66bbbbbb666bbb666bb66bbb66bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb0400000007010100030000000000}}}{\fs40\cf1  }{\b\f2\fs44\cf1 TAfComPort
+
+\par }{\b\f1\fs20\cf1 Proporciona las funciones de comunicaci\'f3n de serie b\'e1sicas. 
+\par Puede usarse como un proveedor de datos para un distribuidor de datos.
+\par 
+\par }{\f2\fs18\cf2 Procedure Close;
+\par }\pard \ql \li0\ri0\sl240\slmult0\nowidctlpar\tx568\nooverflow\faroman\rin0\lin0\itap0 {\f1\fs20\cf1 Cierra el puerto de comunicaciones.
+\par }\pard \ql \li0\ri0\sl240\slmult0\nowidctlpar\nooverflow\faroman\rin0\lin0\itap0 {\f2\fs18\cf2 
+\par Function ExecuteConfigDialog: Boolean;
+\par }{\f1\fs20\cf1 Ejecuta el di\'e1logo de dispositivo configuraci\'f3n de comunicaci\'f3n standard.
+\par }{\f2\fs18\cf2 
+\par Function InBufUsed: Integer;
+\par }{\f1\fs18\cf1 Retorna el n\'famero de bytes en el almac\'e9n de la entrada del controlador del dispositivo.
+\par }{\f2\fs18\cf2 
+\par Procedure Open;
+\par }{\f1\fs20\cf1 Abre el puerto de comunicaciones.
+\par }{\f2\fs18\cf2 
+\par Function OutBufFree: Integer;
+\par }{\f1\fs20\cf1 Retorna el n\'famero de bytes libres en almac\'e9n de salida.
+\par }{\f2\fs18\cf2 
+\par Function OutBufUsed: Integer;
+\par }{\f1\fs20\cf1 Devuelve n\'famero de bytes usados en almac\'e9n de salida.
+\par }{\f2\fs18\cf2 
+\par Procedure PurgeRX;
+\par }{\f1\fs20\cf1 Elimina el almac\'e9n de la entrada de controlador del dispositivo.
+\par }{\f2\fs18\cf2 
+\par Procedure PurgeTX;
+\par }{\f1\fs20\cf1 Elimina controlador del dispositivo y el almac\'e9n de salida interna.
+\par }{\f2\fs18\cf2 
+\par function ReadChar: Char;
+\par }{\f1\fs20\cf1 Lee el car\'e1cter del almac\'e9n de la entrada. 
+\par Si no hay ning\'fan car\'e1cter para leer, una excepci\'f3n se levanta.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par procedure ReadData(var Buf; Size: Integer);
+\par }{\f1\fs20\cf1 Lee el n\'famero especificado de bytes del almac\'e9n de la entrada. 
+\par Si no hay bastantes datos para leer, una excepci\'f3n se levanta.
+\par }{\f2\fs18\cf2 
+\par Function ReadToString: String;
+\par }{\f1\fs20\cf1 Lee todos los datos del almac\'e9n de la entrada en cadena.
+\par }{\f2\fs18\cf2 
+\par procedure SynchronizeEvent(EventKind: TAfComPortEventKind; 
+\par   Data: TAfComPortEventData; Timeout: Integer);
+\par }{\f1\fs20\cf1 Realiza el proceso de eventos sincronizado normal. 
+\par Este m\'e9todo s\'f3lo debe llamarse de OnNonSyncEvent.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par Procedure WritLeChar(C: Char);
+\par }{\f1\fs20\cf1 Escribe el car\'e1cter al almac\'e9n de salida. 
+\par Si no hay bastante espacio en el almac\'e9n de salida, una excepci\'f3n se levanta.
+\par Lee la propiedad de OutBufSize.
+\par }{\f2\fs18\cf2\lang1033\langfe3082\langnp1033 procedure WriteData(const Data; Size: Integer); override;
+\par }{\f1\fs20\cf1 Escribe los datos al almac\'e9n de salida. 
+\par Si no hay bastante espacio en el almac\'e9n de salida, una excepci\'f3n se levanta. 
+\par Lee la propiedad de OutBufSize.
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf2 procedure WriteString(const S: String);
+\par }{\f1\fs20\cf1 Escribe la cadena al almac\'e9n de salida. 
+\par Si no hay bastante espacio en el almac\'e9n de salida, una excepci\'f3n se levanta.
+\par Lee la propiedad de OutBufSize.
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf2 property Active: Boolean;
+\par }{\f1\fs20\cf1 Indica si el puerto de comunicaciones est\'e1 abierto.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par Property Core: TAfComPortCore; [ReadOnly]
+\par }{\f1\fs20\cf1 Retorna la instancia del objeto de n\'facleo de comunicaciones.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par Property DCB: TDCB;
+\par }{\f1\fs20\cf1 Especifica el DCB puerto configuraci\'f3n. 
+\par }{\f2\fs18\cf2 
+\par Property Handle: THandle; [ReadOnly]
+\par }{\f1\fs20\cf1 Retorna el manejo de dispositivo de comunicaci\'f3n para las Windows API llamadas.
+\par }{\f2\fs18\cf2 
+\par Property CTSHold: Boolean; [ReadOnly]
+\par }{\f1\fs20\cf1 Retorna si la transmisi\'f3n est\'e1 esperando la se\'f1al de CTS a ser enviada.
+\par }{\f2\fs18\cf2 
+\par Property DSRHold: Boolean; [ReadOnly]
+\par }{\f1\fs18\cf1 Retorna si la transmisi\'f3n est\'e1 esperando la se\'f1al de DSR a ser enviada.
+\par }{\f2\fs18\cf2 
+\par Property RLSDHold: Boolean;  [ReadOnly]
+\par }{\f1\fs20\cf1 Retorna si la transmisi\'f3n est\'e1 esperando la se\'f1al de RLSD a ser enviada.
+\par }{\f2\fs18\cf2 
+\par Property XOffHold: Boolean; [ReadOnly]
+\par }{\f1\fs20\cf1 Retorna si la transmisi\'f3n est\'e1 esperando porque el car\'e1cter de XOFF fue recibido.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par Property XOffSent: Boolean; [ReadOnly]
+\par }{\f1\fs20\cf1 Retorna si la transmisi\'f3n est\'e1 esperando porque el car\'e1cter de XOFF fue transmitido.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par property CTS: Boolean; [ReadOnly]
+\par }{\f1\fs20\cf1 Retorna el estado de se\'f1al de CTS.
+\par }{\f2\fs18\cf2 
+\par property DSR: Boolean; [ReadOnly]
+\par }{\f1\fs20\cf1 Retorna el estado de se\'f1al de DSR.
+\par }{\f2\fs18\cf2 
+\par property RING: Boolean; [ReadOnly] 
+\par }{\f1\fs20\cf1 Retorna el estado de se\'f1al de la LLAMADA.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par property RLSD: Boolean; [ReadOnly]
+\par }{\f1\fs20\cf1 Retorna el estado de se\'f1al de RLSD.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par Procedure SetDefaultParameters;
+\par }{\f1\fs20\cf1 Fija el par\'e1metro del puerto de comunicaciones conforme el seteo predefinido del sistema.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par Function SettingsStr: String;
+\par }{\f1\fs20\cf1 Retorna cadena que contiene n\'famero del puerto y los par\'e1metros de comunicaci\'f3n actuales.
+\par (Por ejemplo COM1: EL 115200,N,8,1).
+\par }{\f2\fs18\cf2 \page }{\f2\fs18\cf12 Property AutoOpen: Boolean;
+\par }{\f1\fs20\cf1 Cuando es Verdad, el m\'e9todo Open se llama despu\'e9s de crear el componente. 
+\par El valor por defecto es Falso.
+\par }{\f2\fs18\cf12 
+\par }{\f2\fs18\cf12\lang1033\langfe3082\langnp1033 property BaudRate: TAfBaudrate;
+\par }{\i\f2\fs18\cf1 TAfBaudrate = (br110, br300, br600, br1200, br2400, br4800, br9600, br14400,
+\par   br19200, br38400, br56000, br57600, br115200, br128000, br256000, brUser);
+\par }{\f1\fs20\cf1 
+\par Especifica la velocidad en baudios usada por el puerto de comunicaciones. 
+\par El valor de brUser permite tambi\'e9n especificar la velocidad en baudios non-standard. 
+\par Lee la propiedad de UserBaudRate.}{\i\f1\fs20\cf1 
+\par }{\i\f2\fs18\cf1 
+\par }{\f2\fs18\cf12 Property Databits: TAfDatabits;
+\par }\pard \ql \li0\ri0\sl240\slmult0\nowidctlpar\tx5822\nooverflow\faroman\rin0\lin0\itap0 {\i\f2\fs18\cf1 TAfDatabits = (db4, db5, db6, db7, db8);
+\par }{\f1\fs20\cf1 
+\par Especifica el n\'famero de d\'edgitos en los datos del puerto de comunicaciones.}{\i\f1\fs20\cf1 
+\par }{\i\f2\fs18\cf1 
+\par }\pard \ql \li0\ri0\sl240\slmult0\nowidctlpar\nooverflow\faroman\rin0\lin0\itap0 {\f2\fs18\cf12 Property DTR: Boolean;
+\par }{\f1\fs20\cf1 Especifica el estado actual de la se\'f1al de DTR.
+\par }{\f2\fs18\cf12 
+\par Property EventThreadPriority: TThreadPriority;
+\par }{\f1\fs20\cf1 Especifica la prioridad del evento de hilos m\'faltiples ( thread) en el objeto de n\'facleo de comunicaci\'f3n.}{\f1\fs20\cf12 
+\par }{\f2\fs18\cf12 
+\par }{\f2\fs18\cf12\lang1033\langfe3082\langnp1033 Property FlowControl: TAfFlowControl;
+\par }{\i\f2\fs18\cf1 TAfFlowControl =( fwNone, fwXOnXOff, fwRtsCts, fwDtrDsr);
+\par }{\f1\fs20\cf1 
+\par Especifica el modo del control de flujo.}{\i\f1\fs20\cf1 
+\par }{\i\f2\fs18\cf1 
+\par }{\f2\fs18\cf12 Property InBufSize: Integer;
+\par }{\f1\fs20\cf1 Especifica el tama\'f1o del almac\'e9n de la entrada de dispositivo interno.
+\par }{\f2\fs18\cf12 
+\par property Options: TAfComOptions;
+\par }{\i\f2\fs18\cf1 TAfComOption = (coParityCheck, coDsrSensitivity, coIgnoreXOff, coErrorChar, coStripNull);
+\par TAfComOptions = set of TAfComOption;
+\par }{\f1\fs20\cf1 
+\par Especifica algunas banderas de dispositivo de comunicaci\'f3n especiales.
+\par }{\i\f2\fs18\cf1 
+\par }{\f2\fs18\cf12 property OutBufSize: Integer;
+\par }{\f1\fs20\cf1 Especifica el tama\'f1o del almac\'e9n de salida. }{\f1\fs20\cf12 
+\par }{\f2\fs18\cf12 
+\par Property Parity: TAfParity;
+\par }{\i\f2\fs18\cf1 TAfParity = (paNone, paOdd, paEven, paMark, paSpace);
+\par }{\f1\fs20\cf1 
+\par Especifica el modo de la paridad de verificaci\'f3n del puerto de comunicaciones.
+\par }{\i\f2\fs18\cf1 
+\par }{\f2\fs18\cf12 Property RTS: Boolean;
+\par }{\f1\fs20\cf1 Especifica el estado actual de la se\'f1al de RTS.
+\par }{\f2\fs18\cf12 
+\par }{\f2\fs18\cf12\lang1033\langfe3082\langnp1033 Property Stopbits: TAfStopbits;
+\par }\pard \ql \li0\ri0\sl240\slmult0\nowidctlpar\tx6106\nooverflow\faroman\rin0\lin0\itap0 {\i\f2\fs18\cf1 TAfStopbits = (sbOne, sbOneAndHalf, sbTwo);
+\par }{\f1\fs20\cf1 
+\par Especifica el n\'famero de bits de parada del puerto de comunicaciones.
+\par }{\i\f2\fs18\cf1 
+\par }\pard \ql \li0\ri0\sl240\slmult0\nowidctlpar\nooverflow\faroman\rin0\lin0\itap0 {\f2\fs18\cf12 property UserBaudRate: Integer;
+\par }{\f1\fs20\cf1 Especifica la velocidad en baudios usuario-definida del puerto de comunicaciones. 
+\par Fijando esta propiedad tambi\'e9n causa el seteo de  la propiedad brUser.}{\f1\fs20\cf12 
+\par }{\f2\fs18\cf12 
+\par Property WriteThreadPriority: TThreadPriority;
+\par }{\f1\fs20\cf1 Especifica la prioridad de escritura a de hilos m\'faltiples ( thread) en el objeto de n\'facleo de comunicaci\'f3n.}{\f1\fs20\cf12 
+\par }{\f2\fs18\cf12 \page Property XOnChar: Char;
+\par }{\f1\fs20\cf1 Especifica el car\'e1cter de XON cuando el control de XON/XOFF se usa.
+\par }{\f2\fs18\cf12 
+\par Property XOffChar: Char;
+\par }{\f1\fs20\cf1 Especifica el car\'e1cter de XOFF cuando el control de XON/XOFF se usa.
+\par }{\f2\fs18\cf12 
+\par Property XOnLim: Word;
+\par 
+\par Property XOffLim: Word;
+\par }{\f2\fs18\cf6 
+\par }{\f2\fs18\cf6\lang1033\langfe3082\langnp1033 property OnCTSChanged: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando el estado de se\'f1al de CTS se cambia.
+\par  Para determinar el estado de la se\'f1al CTS use la propiedad CTS.
+\par }{\f2\fs18\cf6 
+\par }{\f2\fs18\cf6\lang1033\langfe3082\langnp1033 Property OnDataRecived: TAfCPTDataReceivedEvent;
+\par }{\i\f2\fs18\cf1 TAfCPTDataReceivedEvent = procedure(Sender: TObject; Count: Integer) of object;
+\par }{\f1\fs20\cf1 
+\par Ocurre cuando un dato se recibe por el puerto de comunicaciones. 
+\par Cuenta el n\'famero actual de bytes disponibles para leer. 
+\par Debes leer el n\'famero completo de bytes pasados por el par\'e1metro Count. 
+\par Si leyeras menos del n\'famero de la Cuenta de bytes, los datos que permanecen todav\'eda se guarda en el almac\'e9n de controlador de dispositivo interno, pero este evento no ocurrir\'e1 hasta que cualquier nuevo datos se reciba.
+\par  As\'ed que nunca ver\'edas los datos no le\'eddos hasta que entren nuevos datos al puerto de comunicaciones. 
+\par Hay una comprobaci\'f3n interior del n\'famero de bytes no le\'eddo cada 200ms, puede resolver esta situaci\'f3n. 
+\par Si hay cualquier dato no le\'eddo, el "falso"  evento ocurrir\'e1 para permitirte leer esos datos.
+\par }{\f1\fs20\ul\cf1 
+\par Recuerda, el evento de OnDataReceived sin embargo nunca ocurre cuando un distribuidor de datos ha asignado este componente como un proveedor de datos. 
+\par En este caso, este evento se delega al distribuidor de los datos. 
+\par Lee TDataDispatcher.OnDataReceived
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf6\lang1033\langfe3082\langnp1033 property OnDSRChanged: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando el estado de se\'f1al de DSR se cambia. 
+\par Para determinar el estado de la se\'f1al DSR use la propiedad DSR.
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf6\lang1033\langfe3082\langnp1033 Property OnRLSDChanged: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando el estado de se\'f1al de RLSD se cambia. 
+\par Para determinar el estado de la se\'f1al RLSD use la propiedad RLSD
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf6 Property OnRINGDetected: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando el estado de se\'f1al de la LLAMADA se cambia. 
+\par Para determinar el estado de LLAMADA  use a propiedad RING.
+\par }{\f2\fs18\cf6 
+\par Property OnLineError: TAfCPTErrorEvent;
+\par }{\i\f2\fs18\cf1 TAfCPTErrorEvent = procedure(Sender: TObject; Errors: DWORD) of object;
+\par }{\f1\fs20\cf1 
+\par Ocurre cuando el puerto de comunicaciones descubre error de la l\'ednea o descanso de la l\'ednea. 
+\par Los errores son un c\'f3digo que indica tipo de error. 
+\par Lee la funci\'f3n ClearCommError y su par\'e1metro del lpErrors en la Win32 API Ayuda para los detalles.
+\par }{\f2\fs18\cf1  
+\par \page }{\f2\fs18\cf6 Property OnNonSyncEvent: TAfCPTCoreEvent;
+\par }\pard \ql \li0\ri0\sl240\slmult0\nowidctlpar\tx5964\nooverflow\faroman\rin0\lin0\itap0 {\i\f2\fs18\cf1 TAfCPTCoreEvent = procedure(Sender: TObject; EventKind: TAfComPortEventKind; 
+\par   Data: TAfComPortEventData) of object;
+\par }\pard \ql \li0\ri0\sl240\slmult0\nowidctlpar\nooverflow\faroman\rin0\lin0\itap0 {\i\f2\fs18\cf1 TAfComPortEventData = DWORD;
+\par TAfComPortEventKind = TAfCoreEvent;
+\par }{\f1\fs20\cf1 
+\par En caso de que asignara te permite ocuparse de evento de comunicaci\'f3n del hilo de evento que lo maneja directamente en cambio dentro de VCL el hilo principal sincroniz\'f3 los eventos (por ejemplo OnDataReceived, OnSyncEvent..).
+\par  Este acercamiento te permite ocuparse de este evento m\'e1s r\'e1pido que en los eventos sincronizados, por ejemplo si tu aplicaci\'f3n debe responder muy r\'e1pidamente. 
+\par Porque VCL no est\'e1 hilo-seguro, NUNCA puedes llamar cualquier m\'e9todo de VCL aqu\'ed, pero puedes llamar el m\'e9todo de SynchronizeEvent de aqu\'ed
+ y puedes continuar con el procesamiento de  mensaje normal o se puede usar cualquier otro mecanismo sincronizando. 
+\par Refi\'e9rete al Examples\\NonsyncEventExample para los detalles.
+\par }{\i\f2\fs18\cf1 
+\par }{\f2\fs18\cf6 Property OnOutBufFree: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando todos los datos en almac\'e9n de salida fueron enviados.
+\par }{\f1\fs20\cf6 
+\par }{\f2\fs18\cf6 Property OnPortClose: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando puerto de comunicaciones est\'e1 cerrado}{\f1\fs20\cf6 
+\par }{\f2\fs18\cf6 
+\par Property OnPortOpen: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando puerto de comunicaciones se abre}{\f1\fs20\cf6 
+\par }{\f2\fs18\cf6 
+\par }{\f2\fs18\cf6\lang1033\langfe3082\langnp1033 property OnSyncEvent: TAfCPTCoreEvent;
+\par }\pard \ql \li0\ri0\sl240\slmult0\nowidctlpar\tx5964\nooverflow\faroman\rin0\lin0\itap0 {\i\f2\fs18\cf1 TAfCPTCoreEvent = procedure(Sender: TObject; EventKind: TAfComPortEventKind; 
+\par   Data: TAfComPortEventData) of object;
+\par }\pard \ql \li0\ri0\sl240\slmult0\nowidctlpar\nooverflow\faroman\rin0\lin0\itap0 {\i\f2\fs18\cf1 TAfComPortEventData = DWORD;
+\par TAfComPortEventKind = TAfCoreEvent;
+\par }{\f1\fs20\cf1 
+\par Esta propiedad centraliza el evento de todos los puertos de comunicaciones los eventos se describen aqu\'ed arriba. 
+\par }{\f2\fs20\cf1 \page }{\f2\fs20\cf1 {\pict\wmetafile8\picw517\pich517\picwgoal293\pichgoal293 \picscalex97\picscaley97 
+010009000003f40000000000d200000000000400000003010800050000000b0200000000050000000c02180018000400000007010400d2000000430f2000cc000000180018000000000018001800000000002800000018000000180000000100040000000000200100002b1200002b12000010000000100000000000000080
+000000ff00000000008000800080000000ff00ff00ff0000800000808000000080800080808000c0c0c00000ff0000ffff000000ffff00ffffff00bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb22222222222bbbbbbbbbbbbb2bbbbbbbbbbbbbbbbbbbbb2b2b2bbbbbbbb666bbbbbbbbb222bbbbbbb
+bbb66bbbb8888888888888bbbb6b6bbbb8000000000008bbb6bbbbbbb8099999999908bb6bbbbbbbb8099499494908b6bbbbbbbbb80994994449086bbbbbbbbbb8099499494908bbbbbb6bbbb8094449949908bbbbbbb6bbb8099999999908666666666bb8094499494908bbbbbbb6bbb8094949444908bbbbbb6bbbb80949
+494949086bbbbbbbbbb8094499949908b6bbbbbbbbb8099999999908bb6bbbbbbbb8000000000008bbb6bbbbbbb8888888888888bbbb6b6bbbbbbbbbbbbbbbbbbbbbb66bbbbbbbbbbbbbbbbbbbbb666bbbbbbbbbbbbbbbbbbbbbbbbbbb04000000070101000300000000000000000000000000}}{\f2\fs18\cf1  }{
+\b\f2\fs44\cf1 TAfDataDispatcher}{\f2\fs18\cf1 
+\par }{\b\f1\fs20\cf1 Proporciona el despacho de datos entrantes y eventos en uno o m\'e1s componentes de "datos-enterado". 
+\par Tiene su propio almac\'e9n de distribuci\'f3n. 
+\par Puede usarse con cualquier componente de proveedor de datos (por ejemplo TAfComPort) o separadamente.
+\par 
+\par }{\f2\fs18\cf2 Procedure AbortWriteStream;
+\par }{\f1\fs20\cf1 Termina enviando el flujo de datos.
+\par }{\f2\fs18\cf2 
+\par }{\f2\fs18\cf2\lang1033\langfe3082\langnp1033 function BufFree: Integer;
+\par }{\f1\fs20\cf1 Retorna el n\'famero de bytes libres en el almac\'e9n del distribuidor.
+\par }{\f2\fs18\cf2 
+\par }{\f2\fs18\cf2\lang1033\langfe3082\langnp1033 function BufUsed: Integer;
+\par }{\f1\fs20\cf1\lang1024\langfe1024\noproof Retorna el n\'famero de bytes actualmente en el almacen del distribuidor.}{\f1\fs20\cf1 
+\par }{\f2\fs18\cf2 
+\par Procedure Clear;
+\par }{\f1\fs20\cf1 Realiza la eliminaci\'f3n de todos los comandos de los componentes de  "datos-enterado" que se enlazaron al distribuidor}{\f2\fs18\cf2 
+\par 
+\par Procedure ClearBuffer;
+\par }{\f1\fs20\cf1 No uses, no est\'e1 implementado todav\'eda.}{\f2\fs18\cf2 
+\par 
+\par Procedure Dispatcher_WriteBufFree;
+\par procedure Dispatcher_WriteTo(const Data; Size: Integer);
+\par 
+\par Function ReadChar: Char;
+\par }{\f1\fs20\cf1 Lee el car\'e1cter de almac\'e9n del distribuidor. 
+\par Si no hay ning\'fan car\'e1cter para leer, una excepci\'f3n se levanta.
+\par Si se llama dentro del evento de OnDataReceived no se remueve ning\'fan dato desde almac\'e9n del distribuidor hasta que todos los componentes que se enlazaron los han visto.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par procedure ReadData(var Buf; Size: Integer);
+\par }{\f1\fs20\cf1 Lee el n\'famero especificado de bytes de almac\'e9n del distribuidor. 
+\par Si no hay bastantes datos para leer, una excepci\'f3n se levanta. 
+\par Si se llama dentro del evento de OnDataReceived no se remueve ning\'fan dato desde almac\'e9n del distribuidor hasta que todos los componentes que se enlazaron los han visto.}{\f1\fs20\cf2 
+\par }{\f1\fs20\cf1 
+\par }{\f2\fs18\cf2\lang1033\langfe3082\langnp1033 function ReadString: String;
+\par }{\f1\fs20\cf1 Lee toda la cadena de datos del almac\'e9n del distribuidor. 
+\par Si se llama dentro del evento de OnDataReceived no se remueve ning\'fan dato desde almac\'e9n del distribuidor hasta que todos los componentes que se enlazaron los han visto.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par }{\f2\fs18\cf2\lang1033\langfe3082\langnp1033 procedure WriteChar(C: Char);
+\par }{\f1\fs20\cf1 Escribe el car\'e1cter al proveedor de los datos especificado.
+\par }{\f2\fs18\cf2 
+\par procedure WriteData(const Data; Size: Integer);
+\par }{\f1\fs20\cf1 Escribe los datos al proveedor de los datos especificado.
+\par }{\f2\fs18\cf2 
+\par procedure WriteString(const S: String);
+\par }{\f1\fs20\cf1 Escribe la cadena al proveedor de los datos especificado.
+\par }{\f2\fs18\cf2 
+\par procedure WriteStream(Stream: TStream; FreeAtferWrite: Boolean);
+\par }{\f1\fs20\cf1 Escribe el flujo de datos al proveedor especificado. 
+\par Si FreeAfterWrite es Verdad, el flujo se destruir\'e1 autom\'e1ticamente despu\'e9s de terminar de escribir o se aborte. 
+\par El flujo se env\'eda por bloques peque\'f1os de datos el tama\'f1o se especifica en la propiedad de StreamBlockSize.}{\f2\fs18\cf2 
+\par \page Property LinksList: TList;
+\par 
+\par Property ReceivedBytes: Integer; [ReadOnly]
+\par }{\f1\fs20\cf1 No uses, no est\'e1 lleno llevado a cabo todav\'eda}{\f2\fs18\cf2 
+\par 
+\par Property SentBytes: Integer; [ReadOnly]
+\par }{\f1\fs20\cf1 No uses, no est\'e1 totalmente terminado.}{\f2\fs18\cf2 
+\par 
+\par Property StreamWriting: Boolean; [ReadOnly]
+\par }{\f1\fs20\cf1 Indica si escribiendo flujo es en marcha.}{\f2\fs18\cf2 
+\par 
+\par Property OnWriteToDevice: TAfDispWriteToEvent;
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf12 Property BufferSize: Integer;
+\par }{\f1\fs20\cf1 Especifica el tama\'f1o del almac\'e9n del distribuidor
+\par }{\f2\fs18\cf12 
+\par Property DataProvider: TAfDataDispConnComponent;
+\par }{\f1\fs20\cf1 Especifica el proveedor de los datos
+\par }{\f2\fs18\cf12 
+\par property StreamBlockSize: Integer;
+\par }{\f1\fs20\cf1 Especifica el tama\'f1o m\'e1ximo de flujo de bloques de datos de escritura.
+\par }{\f2\fs18\cf12 
+\par }{\f2\fs18\cf6 property OnDataReceived: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando un dato se recibe del proveedor de los datos (escrito al almac\'e9n del distribuidor).}{\f2\fs18\cf6 
+\par 
+\par Property OnWriteBufFree: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando el dato de salida de proveedor de los datos fue enviado. 
+\par Este evento no se activa sin embargo cuando el flujo de la escritura esta en marcha.}{\f2\fs18\cf6 
+\par 
+\par Property OnWriteStreamBlock: TAfDispStreamEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando el bloque de datos de flujo esta escrito
+\par }{\f2\fs18\cf6 
+\par Property OnWriteStreamDone: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando se esta escribiendo el flujo de datos.
+\par }{\f2\fs18\cf1 
+\par  
+\par }{\f11\fs20\cf1 \page }{\f11\fs20\cf1 {\pict\wmetafile8\picw513\pich513\picwgoal291\pichgoal291 \picscalex98\picscaley98 
+010009000003f40000000000d200000000000400000003010800050000000b0200000000050000000c02180018000400000007010400d2000000430f2000cc000000180018000000000018001800000000002800000018000000180000000100040000000000200100003d1200003d12000010000000100000000000000080
+000000ff00000000008000800080000000ff00ff00ff0000800000808000000080800080808000c0c0c00000ff0000ffff000000ffff00ffffff00bbbbbbbbbbbbbbbbbbbbbbbbb0000000000000000000000bb0bba0bfbfbfb0bba0bbbb0bb0f0b0fbfbfbf0f0b0bbbb0bb0ffb0bfbfbfb0ffb0bbbb0bb000000000000000
+0000000bb0ffffffffffffffff0bba0bb0f0000000ffffffff0f0b0bb0ffffffffffffffff0ffb0bb0ffffffffffffffff00000bb0f00000000000000f0bfb0bb0ffffffffffffffff0fbf0bb022222222222222220bfb0bb02ffffffffffffff20fbf0bb022222222222222220bfb0bb0ffffffffffffffff0fbf0bb0f000
+00000000000f0bfb0bb0ffffffffffffffff0fbf0bb0ffffffffffffffff00000bb0f00000000000000f0bba0bb0ffffffffffffffff0f0b0bb0ffffffffffffffff0ffb0bb0000000000000000000000bbbbbbbbbbbbbbbbbbbbbbbbb04000000070101000300000000000000000000000000}}{\fs44\cf1  }{
+\b\f2\fs44\cf1 TAfLineViewer 
+\par }{\b\f1\fs20\cf1 Representa a un visor de texto virtual que despliega las filas del texto. 
+\par Tambi\'e9n soporta texto resaltado y  pintar un \'e1rea de usuario en el lado izquierdo del control.
+\par }{\f2\fs18\cf2 
+\par Property FocusedPoint: TPoint;}{\f2\fs18\cf1  
+\par }{\f1\fs20\cf1 Las coordenadas del cursor. 
+\par TPoint aqu\'ed no quiere decir las coordenadas de la pantalla, pero s\'ed fila y col.
+\par }{\f2\fs18\cf2 
+\par Property SelectedText: String; [ReadOnly]}{\f2\fs18\cf1 
+\par }{\f1\fs20\cf1 Retorna el texto seleccionado, las l\'edneas son terminadas por #13#10}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par Property SelStart: TPoint;}{\f2\fs18\cf1 
+\par }{\f1\fs20\cf1 Las coordenadas del primer car\'e1cter seleccionado
+\par }{\f2\fs18\cf2 
+\par Property SelEnd: TPoint;
+\par }{\f1\fs20\cf1 Las coordenadas del \'faltimo car\'e1cter seleccionado
+\par }{\f2\fs18\cf2 
+\par Property TopLeft: TPoint;}{\f2\fs18\cf1 
+\par }{\f1\fs20\cf1 Las coordenadas del car\'e1cter cima-izquierdo
+\par }{\f2\fs18\cf2 
+\par Property UseScroll: Boolean;}{\f2\fs18\cf1 
+\par }{\f1\fs20\cf1 Cuando es Verdad (el valor por defecto), el mando desfila su contexto (si es posible) repintando las l\'edneas todos visibles en cambio. 
+\par }{\f2\fs18\cf1   
+\par }{\f2\fs18\cf2 Procedure CopyToClipboard;
+\par }{\f1\fs20\cf1 Copia el texto seleccionado al Portapapeles.
+\par }{\f2\fs18\cf2 
+\par procedure DrawToCanvas(DrawCanvas: TCanvas; StartLine, EndLine: Integer; Rect: TRect);
+\par }{\f1\fs20\cf1 Para el uso del futuro, no esta totalmente terminado.}{\f1\fs20\cf2  
+\par }{\f2\fs18\cf2  
+\par procedure DrawLineToCanvas(DrawCanvas: TCanvas; LineNumber: Integer; Rect: TRect; 
+\par   TextMetric: TTextMetric);
+\par }{\f1\fs20\cf1 Para el uso del futuro, no esta totalmente terminado .}{\f1\fs20\cf2   
+\par }{\f2\fs18\cf2 
+\par procedure InvalidateDataRect(R: TRect; FullLine: Boolean);
+\par }{\f1\fs20\cf1 Invalida el \'e1rea del texto deseada. 
+\par R aqu\'ed no quiere decir las coordenadas de la pantalla. 
+\par Cuando el par\'e1metro de FullLine es Verdad y R.Top = R.Bottom, los valores R.Left  R.Right son ignorados y la l\'ednea del texto llena se invalida.
+\par }{\f2\fs18\cf2 
+\par Procedure InvalidateFocusedLine;
+\par }{\f1\fs20\cf1 Invalida la l\'ednea que tiene el enfoque (leer FocusedPoint).
+\par }{\f2\fs18\cf2 
+\par procedure InvalidateLeftSpace(StartLine, EndLine: Integer);
+\par }{\f1\fs20\cf1 Invalida la < \'e1rea izquierda pintada por usuario >. 
+\par }{\f2\fs18\cf2 
+\par function MouseToPoint(X, Y: Integer): TPoint;
+\par }{\f1\fs20\cf1 Convierte coordenadas de pantalla a coordenadas de texto (TPoint aqu\'ed no quiere decir las coordenadas de la pantalla).
+\par }{\f2\fs18\cf2 
+\par Procedure ScrollIntoView;
+\par }{\f1\fs20\cf1 Usar ScrollIntoView para asegurar que una fila enfocada y la columna est\'e1n en el \'e1rea visible.
+\par }{\f2\fs18\cf2   
+\par Property CharHeight: Integer; [ReadOnly]
+\par }{\f1\fs20\cf1 La altura del Conjunto de caracteres ( font ) en p\'edxel.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par Property CharWidth: Integer; [ReadOnly]
+\par }{\f1\fs20\cf1 La anchura del Conjunto de caracteres ( font ) en p\'edxel.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 \page }{\f2\fs18\cf12 Property CaretBlinkTime: TAfCLVCaretBlinkTime;
+\par }{\i\f2\fs18\cf1 TAfCLVCaretBlinkTime = 1..MaxInt;
+\par }{\f1\fs20\cf1 Fija el tiempo de parpadeo del cursor especificado en milisegundos.}{\i\f1\fs20\cf1 
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf12 Property CaretType: TAfCLVCaretType;
+\par }{\i\f2\fs18\cf1 TAfCLVCaretType = (ctVertical, ctHorizontal, ctBlock);
+\par }{\f1\fs20\cf1 Fija la forma del cursor.}{\f1\fs20\cf12 
+\par }{\f2\fs18\cf12 
+\par Property LeftSpace: TAfCLVLeftSpace;
+\par }{\i\f2\fs18\cf1 TAfCLVLeftSpace = 0..MaxInt;
+\par }{\f1\fs20\cf1 Fija que el tama\'f1o del < \'e1rea izquierda pintada por usuario >. 
+\par Esta \'e1rea reside entre el lado de la izquierda del mando y \'e1rea del texto. 
+\par Lee OnDrawLeftSpace para los detalles.
+\par }{\f2\fs18\cf12 
+\par Property LineCount: Integer;
+\par }{\f1\fs20\cf1 Fija el n\'famero de l\'edneas
+\par }{\f2\fs18\cf12 
+\par Property MaxLineLength: TAfCLVMaxLineLength;
+\par }{\i\f2\fs18\cf1 TAfCLVMaxLineLength = 1..AfCLVMaxLineLength;
+\par }{\f1\fs20\cf1 Fija el n\'famero de columnas (el m\'e1ximo. 512)
+\par }{\f2\fs18\cf12 
+\par Property Options: TAfCLVOptions;
+\par }{\i\f2\fs18\cf1 TAfCLVOptions = set of (loCanSelect, loSelectByShift, loDrawFocusSelect,
+\par loThumbTracking, loScrollToRowCursor, loScrollToColCursor, loShowLineCursor, 
+\par loShowCaretCursor, loTabs);
+\par }{\f1\fs20\cf1 
+\par Aqu\'ed se Especifica varios despliegues y propiedades conductuales del AfLineViewer:
+\par 
+\par loCanSelect\tab \tab - los usuarios pueden seleccionar rango de texto 
+\par loSelectByShift     \tab - los usuarios tienen que apretar la tecla may\'fascula por seleccionar el texto 
+\par loDrawFocusSelect   \tab - si esta incluido loShowLineCursor , habilita el enfoque del dibujo a la l\'ednea.
+\par                                       - de la misma manera que TListBox
+\par loThumbTracking     \tab - la imagen del visor se actualiza mientras el usuario est\'e1 arrastrando el dedo pulgar del scrollbar.}{\f1\fs20\cf12 
+\par }{\f1\fs20\cf1 loScrollToRowCursor \tab - el visor siempre intenta desfilar el \'e1rea para hacer la fila enfocada visible.
+\par loScrollToColCursor \tab - el visor siempre intenta desfilar el \'e1rea para hacer la columna enfocada visible.
+\par loShowLineCursor    \tab - la l\'ednea de foco es arrastrada de la misma manera que TlistBox.
+\par loShowCaretCursor   \tab - muestra el s\'edmbolo del cursor.
+\par loTabs              \tab \tab - La tecla de tabulaci\'f3n no causa la selecci\'f3n el pr\'f3ximo control.
+\par }{\f1\fs20\cf12 
+\par }{\f2\fs18\cf12 Property SelectedColor: TColor;
+\par }{\f1\fs20\cf1 Especifica el color del fondo del texto seleccionado.
+\par }{\f2\fs18\cf12 
+\par Property SelectedTextColor: TColor;
+\par }{\f1\fs20\cf1 Especifica el color del primer plano de texto seleccionado.
+\par }{\f2\fs18\cf12 
+\par Property SelectedStyle: TFontStyles;
+\par }{\f1\fs20\cf1 Especifica el estilo del Conjunto de caracteres ( font ) del texto seleccionado.
+\par Lee UsedFontStyles para los detalles.
+\par }{\f2\fs18\cf12 
+\par Property UseFontCache: Boolean;
+\par }{\f1\fs20\cf1 Cuando Verdadero (el valor por defecto es Falso),  se usa el font estilo cache. 
+\par Puede acelerar el pintado si usamos frecuentemente Conjunto de caracteres ( font ) diferentes para cada l\'ednea.}{\f1\fs20\cf12 
+\par }{\f2\fs18\cf12 
+\par property UsedFontStyles: TFontStyles;
+\par }{\f1\fs20\cf1 Especifica el estilo de font de caracteres para calcular globalmente altura y anchura del font de caracteres. 
+\par Esto es importante cuando se usan para pintar diferentes estilos del conjunto de caracteres ( font ). 
+\par 
+\par Por ejemplo, te gustar\'eda resaltar algunas palabras claves en el texto fijando el estilo del conjunto de caracteres a la Negrita. Si no incluyes [ fsBold] en esta propiedad, los caracteres bien delineados no pueden encajar al tama\'f1o calculado.
+\par }{\f2\fs18\cf1 \page }{\f2\fs18\cf6 Property OnBof: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando la primera l\'ednea se enfoca (FocusedPoint.Y = 0) y el usuario aprieta la tecla de UPARROW.}{\f1\fs20\cf6 
+\par }{\f2\fs18\cf6 
+\par Property OnCursorChange: TAfCLVCursorEvent;
+\par }{\i\f2\fs18\cf1 TAfCLVCursorEvent = procedure (Sender: TObject; CursorPos: TPoint) of object;
+\par }{\f1\fs20\cf1 Ocurre cuando la fila enfocada o la columna se cambia. 
+\par CursorPos contiene las nuevas coordenadas.
+\par }{\f2\fs18\cf6 
+\par property OnDrawLeftSpace: TAfCLVDrawLeftSpEvent;
+\par }{\i\f2\fs18\cf1 TAfCLVDrawLeftSpEvent = procedure (Sender: TObject; const Line, LeftCharPos: Integer;
+\par   Rect: TRect; State: TAfCLVLineState) of object;
+\par TAfCLVLineState = (lsNormal, lsFocused, lsSelected);
+\par }{\f1\fs20\cf1 
+\par Ocurre que cuando la < \'e1rea izquierda pintada por usuario > necesita ser dibujada. 
+\par La l\'ednea indica la fila para donde esa \'e1rea debe dibujarse. 
+\par LeftCharPos indica la primera posici\'f3n visible salida de texto. 
+\par El estado indica estado de la fila.
+\par }{\f2\fs18\cf6 
+\par Property OnEof: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando la \'faltima l\'ednea se enfoca (FocusedPoint.Y = LineCount - 1) y el usuario aprieta la tecla DOWNARROW.}{\f1\fs20\cf6 
+\par }{\f2\fs18\cf6 
+\par Property OnFontChanged: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre despu\'e9s de que la propiedad del Conjunto de caracteres ( font ) fue cambiada. }{\f1\fs20\cf6 
+\par }{\f2\fs18\cf6 
+\par Property OnGetText: TAfCLVGetTextEvent;
+\par }{\i\f2\fs18\cf1 TAfCLVGetTextEvent = procedure (Sender: TObject; Line: Integer; var Text: String;
+\par   var ColorMode: TAfCLVColorMode; var CharColors: TAfCLVCharColors) of object;
+\par TAfCLVColorMode = (cmDefault, cmLine, cmChars, cmCheckLength); 
+\par TAfCLVCharAttr = packed record 
+\par   BColor, FColor: TColor;
+\par   Style: TFontStyles;
+\par end;
+\par TAfCLVCharColors = array[0..AfCLVMaxLineLength] of TAfCLVCharAttr; 
+\par TAfCLVFocusSource = (fsKey, fsMouse, fsHScroll, fsVScroll); 
+\par }{\f1\fs20\cf1 
+\par Ocurre cuando el texto de l\'ednea es requerido. 
+\par 
+\par ColorMode \tab  - especifica el ColorMode:
+\par cmDefault\tab  - el color de uso predefinido.
+\par cmLine\tab \tab  - dice que se usar\'e1n el mismo color y estilo para la l\'ednea entera. 
+\par }\pard \ql \fi720\li720\ri0\sl240\slmult0\nowidctlpar\nooverflow\faroman\rin0\lin720\itap0 {\f1\fs20\cf1  - Este color tiene que ser especificado en CharColors[0]
+\par }\pard \ql \li0\ri0\sl240\slmult0\nowidctlpar\nooverflow\faroman\rin0\lin0\itap0 {\f1\fs20\cf1 cmChars\tab  - dice que cada car\'e1cter puede tener color diferente y estilo. 
+\par }\pard \ql \fi720\li720\ri0\sl240\slmult0\nowidctlpar\nooverflow\faroman\rin0\lin720\itap0 {\f1\fs20\cf1  - Tienes que llenar CharColor array con los valores deseados.
+\par }\pard \ql \li0\ri0\sl240\slmult0\nowidctlpar\nooverflow\faroman\rin0\lin0\itap0 {\f1\fs20\cf1 cmCheckLength - usado internamente para verificar la longitud de texto.
+\par }{\f2\fs18\cf6 
+\par Property OnLeftSpaceMouseDown: TMouseEvent;
+\par }{\f1\fs20\cf1 Ocurre que cuando el usuario aprieta un bot\'f3n del rat\'f3n con el indicador del rat\'f3n encima de < \'e1rea izquierda pintada por usuario > .
+\par }{\f2\fs18\cf6 
+\par Property OnSelectionChange: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando se actualiza un cambio de selecci\'f3n.
+\par }{\f2\fs20\cf1 
+\par }{\fs20\cf1 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par }{\fs20\cf1 {\pict\wmetafile8\picw497\pich497\picwgoal282\pichgoal282 \picscalex96\picscaley96 
+010009000003f40000000000d200000000000400000003010800050000000b0200000000050000000c02180018000400000007010400d2000000430f2000cc00000018001800000000001800180000000000280000001800000018000000010004000000000020010000d3120000d312000010000000100000000000000080
+000000ff00000000008000800080000000ff00ff00ff0000800000808000000080800080808000c0c0c00000ff0000ffff000000ffff00ffffff00bbbbb00000000000000bbbbbbbbbb0aaaaaaaaaaaa0bbbbbbbbbbb00aaaaaaaa00bbbbbbbbbbbbbb0aaaaaa0bbbbbbbbbbbbbbbb0aaaaaa0bbbbbbbbbfffffffffffffff
+fffffffbfaaaaaaaaaaaaaaaaaaaaaaffa0fff0000000000000000affa00000000000000000000affa06666666666600000000affa00000000000000000000affa02022202222220000000affa00000000000000000000affa00000000000000000000affa0fffff0ff00000000000affa00000000000000000000affa0000
+0000000000000000affa0cccc0ccccc0ccc00000affa00000000000000000000affa00000000000000000000affa0ffffff0055555555550affa00000000000000000000affaaaaaaaaaaaaaaaaaaaaaafbffffffffffffffffffffffb04000000070101000300000000000000000000000000}}{\fs40\cf1  }{
+\b\f2\fs44\cf1 TAfTerminal
+\par }{\b\f1\fs20\cf1 Representa una ventana terminal con el almac\'e9n circular y capacidad del modo de desplazamiento hacia atr\'e1s. 
+\par No soporta la emulaci\'f3n terminal como ANSI o VT102, pero puede resaltar el texto con 16 colores diferentes. 
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf2 procedure ClearBuffer;
+\par }{\f1\fs20\cf1 Elimina el almac\'e9n terminal
+\par }{\f2\fs18\cf2 
+\par Function DefaultTermColor: TAfTRMCharAttr;
+\par }{\i\f2\fs18\cf1 TAfTRMCharAttr = packed record  
+\par   FColor, BColor: TAfTRMCharColor;
+\par end;
+\par }{\f1\fs20\cf1 
+\par Retorna los colores de la terminal predefinidos}{\i\f1\fs20\cf1 
+\par }{\i\f2\fs18\cf2 
+\par }{\f2\fs18\cf2 Procedure DrawChangedBuffer;
+\par }{\f1\fs20\cf1 Dibuja el almac\'e9n. 
+\par Esto debe llamarse despu\'e9s de que se llamaron WriteChar o m\'e9todos de WriteColorChar
+\par }{\f2\fs18\cf1  }{\f2\fs18\cf2 
+\par procedure WriteChar(C: Char); 
+\par }{\f1\fs20\cf1 Escribe el car\'e1cter a almac\'e9n. 
+\par Los caracteres escritos por este m\'e9todo no ser\'e1n visibles hasta llamar el m\'e9todo DrawChangedBuffer.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par procedure WriteColorChar(C: Char; BColor, FColor: TAfTRMCharColor); 
+\par }{\f1\fs20\cf1 Escribe el car\'e1cter al almac\'e9n con el color especificado. 
+\par Los caracteres escritos por este m\'e9todo no ser\'e1n visibles hasta llamar el m\'e9todo DrawChangedBuffer.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par procedure WriteColorStringAndData(const S: String; BColor, FColor: TAfTRMCharColor;
+\par   UserDataItem: Pointer);
+\par }{\f1\fs20\cf1 
+\par Escribe el texto con el color especificado y userdata (cuando UserDataItem <> nil ) al almac\'e9n. 
+\par No tienes que llamar el m\'e9todo de DrawChangedBuffer despu\'e9s de llamar este m\'e9todo. 
+\par Lee la propiedad UserDataSize para los detalles.
+\par }{\f2\fs18\cf2 
+\par procedure WriteString(const S: String);
+\par }{\f1\fs20\cf1 Escribe el texto al almac\'e9n. 
+\par No tienes que llamar el m\'e9todo de DrawChangedBuffer despu\'e9s de llamar este m\'e9todo.
+\par }{\f2\fs18\cf2 
+\par property BufferLine[Index: Integer]: String; [ReadOnly]
+\par }{\f1\fs20\cf1 Retorna el texto de l\'ednea en \'e9l < almac\'e9n circular de terminal >.
+\par }{\f2\fs18\cf2 
+\par Property BufferLineNumber: Integer; [ReadOnly]
+\par }{\f1\fs20\cf1 Retorna el n\'famero de \'faltima l\'ednea en < almac\'e9n circular de terminal >.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par Property ColorTable: TAfTRMColorTable;
+\par }{\i\f2\fs18\cf1 TAfTRMCharColor = 0..15;
+\par TAfTRMColorTable = array[TAfTRMCharColor] of TColor;
+\par }{\f1\fs20\cf1 
+\par ColorTable contiene 16 colores que pueden usarse en la terminal.
+\par Puedes fijar otra paleta colorida por esta propiedad.}{\i\f1\fs20\cf1 
+\par }{\f2\fs18\cf2 
+\par }{\f2\fs18\cf2\lang1033\langfe3082\langnp1033 property RelLineColors[Index: Integer]: TAfTRMCharAttrs;
+\par }{\i\f2\fs18\cf1 TAfTRMCharAttrs = array[0..AfCLVMaxLineLength] of TAfTRMCharAttr;
+\par }{\f1\fs20\cf1 
+\par Esta propiedad esta pensada para usar OnGetColors. 
+\par Puedes fijar los colores en cualquier l\'ednea anterior especificada por el desplazamiento de l\'ednea actual que se procesa. 
+\par 
+\par Por ejemplo, RelLineColors[-1] retorna o fija los colores para la l\'ednea anterior.
+\par }{\f2\fs18\cf2 
+\par 
+\par 
+\par Property ScrollBackMode: Boolean;
+\par }{\f1\fs20\cf1 Cuando Falso (el valor por defecto), la terminal puede mostrar datos escritos a \'e9l, los usuarios no pueden desfilar atr\'e1s y leer los datos m\'e1s viejos.
+\par 
+\par Cuando Verdadero, la terminal no muestra los nuevos datos, pero los usuarios pueden desfilar atr\'e1s y pueden ver contexto entero de almac\'e9n. 
+\par En este modo, se escriben los nuevos datos al almac\'e9n temporal y despu\'e9s si se setea esta propiedad a Falso se copia al almac\'e9n de la terminal y se muestra. 
+\par Lee la propiedad de AutoScrollBack.}{\f1\fs20\cf2 
+\par }{\f2\fs18\cf2 
+\par property TermColor[Color: TColor]: Integer; [ReadOnly]
+\par }{\f1\fs20\cf1 Retorna el \'edndice colorim\'e9trico terminal para el color especificado. 
+\par Si el color existe, levanta una excepci\'f3n.
+\par }{\f2\fs18\cf2 
+\par property UserData[Index: Integer]: Pointer;
+\par }{\f1\fs20\cf1 El almac\'e9n terminal interior contiene texto e informaci\'f3n de color (depende de la propiedad de TermColor).
+\par A veces puede ser \'fatil tener el sitio para los datos extras en cada l\'ednea. 
+\par El tama\'f1o de este sitio se especifica en la propiedad de UserDataSize. 
+\par Puedes leer o escribir datos usando esta propiedad. 
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf12 Property AutoScrollBack: Boolean;
+\par }{\f1\fs20\cf1 Cuando Verdadero (el valor por defecto), el ScrollBackMode es autom\'e1ticamente fijado por la acci\'f3n de los usuarios.
+\par }{\f2\fs18\cf12 
+\par Property BkSpcMode: TAfTRMBkSpcMode;
+\par }{\i\f2\fs18\cf1 TAfTRMBkSpcMode = (bmBack, bmBackDel);
+\par }{\f1\fs20\cf1 
+\par Especifica la conducta de la terminal por el car\'e1cter de proceso #08 :
+\par bmBack\tab - los movimientos el cursor atr\'e1s s\'f3lo.
+\par bmBackDel\tab - los movimientos el cursor atr\'e1s y elimina el car\'e1cter de esa posici\'f3n.
+\par }{\f2\fs18\cf12 
+\par Property DisplayCols: Byte;
+\par }{\f1\fs20\cf1 Especifica el n\'famero de columnas. Tambi\'e9n limpia el almac\'e9n terminal.}{\f1\fs20\cf12 
+\par }{\f2\fs18\cf12 
+\par Property Logging: TAfTRMLogging;
+\par }{\i\f2\fs18\cf1 TAfTRMLogging = (lgOff, lgCreate, lgAppend);
+\par }{\f1\fs20\cf1 
+\par Especifica modo de anotado ( logging ):
+\par lgOff\tab \tab - ning\'fan anotando
+\par lgCreate\tab - el archivo del registro de anotaciones siempre se crea, el archivo viejo se sobrescribir\'e1.
+\par lgAppend\tab - se a\'f1adir\'e1n los nuevos datos al archivo del registro de anotaciones existente. 
+\par    \tab \tab - si el archivo no existe, se crear\'e1.
+\par }{\f2\fs18\cf12 
+\par Property LogFlushTime: TAfTRMLogFlushTime;
+\par }{\i\f2\fs18\cf1 TAfTRMLogFlushTime = 1..MaxInt;
+\par }{\f1\fs20\cf1 
+\par Especifica el tiempo de barrido y guardado ( flushing ) contado en milisegundos. 
+\par }{\f2\fs18\cf12 
+\par Property LogName: String;
+\par }{\f1\fs20\cf1 Setea el nombre de archivo del registro de anotaciones. }{\f1\fs20\cf12 
+\par }{\f2\fs18\cf12 
+\par Property LogSize: TAfTRMLogSize;
+\par }{\i\f2\fs18\cf1 TAfTRMLogSize = 1..MaxInt;
+\par }{\f1\fs20\cf1 
+\par No uses, se remover\'e1 en las versiones futuras.
+\par }{\f2\fs18\cf12 
+\par property Options: TAfCLVOptions;
+\par 
+\par Property ScrollBackCaret: TAfCLVCaretType;
+\par }{\f1\fs20\cf1 Especifica la forma del cursor cuando ScrollBackMode es Verdad}{\f1\fs20\cf12 
+\par }{\f2\fs18\cf12 
+\par 
+\par Property ScrollBackKey: TShortCut;
+\par }{\f1\fs20\cf1 Especifica la tecla de atajo que activa ScrollBackMode.
+\par }{\f2\fs18\cf12 
+\par }{\f2\fs18\cf12\lang1033\langfe3082\langnp1033 property ScrollBackRows: Integer;
+\par }{\f1\fs20\cf1 Especifica el n\'famero de filas en el almac\'e9n de la terminal. 
+\par Tambi\'e9n limpia el almac\'e9n terminal.}{\f1\fs20\cf12 
+\par }{\f2\fs18\cf12 
+\par Property TerminalCaret: TAfCLVCaretType;
+\par }{\f1\fs20\cf1 Especifica la forma del cursor cuando ScrollBackMode es Falso}{\f1\fs20\cf12 
+\par }{\f2\fs18\cf12 
+\par Property TermColorMode: TAfTRMColorMode;
+\par }{\i\f2\fs18\cf1 TAfTRMColorMode = (cmLDefault, cmL16_16, cmC16_16);
+\par }{\f1\fs20\cf1 
+\par Especifica el modo colorido:
+\par cmLDefault\tab - s\'f3lo se usan los colores predefinidos
+\par cmL16_16\tab - cada l\'ednea puede tener los colores diferentes
+\par cmC16_16\tab - cada car\'e1cter puede tener los colores diferentes
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf12 property UserDataSize: Integer;
+\par }{\f1\fs20\cf1 Especifica el tama\'f1o de datos del sitio de uso en almac\'e9n de terminal. 
+\par Tambi\'e9n elimina el almac\'e9n terminal.}{\f1\fs20\cf12 
+\par }{\f2\fs18\cf6 
+\par Property OnBeepChar: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando un car\'e1cter #07 se escribe al almac\'e9n.
+\par }{\f2\fs18\cf6 
+\par Property OnDrawBuffer: TNotifyEvent;
+\par }{\f1\fs20\cf1 No uses, es por s\'f3lo a los prop\'f3sitos de poner a punto. Se remover\'e1 en las versiones futuras
+\par }{\f2\fs18\cf6 
+\par Property OnFlushLog: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando se vaci\'f3 el almac\'e9n del archivo del registro de anotaciones.
+\par }{\f2\fs18\cf6 
+\par property OnGetColors: TAfTRMGetColorsEvent;
+\par }{\i\f2\fs18\cf1 TAfTRMGetColorsEvent = procedure (Sender: TObject; Line: Integer; var Colors: TAfTRMCharAttrs) of object;
+\par }{\f1\fs20\cf1 
+\par Ocurre antes del m\'e9todo de DrawChangedBuffer se llama para conseguir la informaci\'f3n colorida para los datos recientemente insertados. 
+\par Si TermColorMode = el cmL16_16 tienes que especificar la informaci\'f3n colorida en Colors[0] 
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf6 Property OnLoggingChange: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando la propiedad logging se cambia.
+\par }{\f2\fs18\cf6 
+\par Property OnNewLine: TAfTRMLineEvent;
+\par }{\i\f2\fs18\cf1 TAfTRMLineEvent = procedure (Sender:TObject; Line: Integer) of object;
+\par }{\f1\fs20\cf1 
+\par Ocurre cuando el car\'e1cter de LF es escrito en almac\'e9n de la terminal. 
+\par Line contiene n\'famero de l\'ednea actual.
+\par }{\f2\fs18\cf6 
+\par Property OnProcessChar: TAfTRMProcessCharEvent;
+\par }{\i\f2\fs18\cf1 TAfTRMProcessCharEvent = procedure (Sender: TObject; var C: Char) of object; 
+\par }{\f1\fs20\cf1 
+\par Ocurre cuando el nuevo car\'e1cter es escrito en almac\'e9n de la terminal. 
+\par Puedes reemplazarlo aqu\'ed o puedes desecharlo fijando C a #00. 
+\par }{\f2\fs18\cf6 
+\par Property OnScrBckBufChange: TAfTRMScrBckBufChange;
+\par }{\i\f2\fs18\cf1 TAfTRMScrBckBufChange = procedure (Sender: TObject; BufferSize: Integer) of object;
+\par }{\f1\fs20\cf1 
+\par Ocurre que cuando ScrollBackMode es Verdadero cada nuevo car\'e1cter se escribe al almac\'e9n temporal. 
+\par El almac\'e9n temporal es te\'f3ricamente ilimitado, pero puedes limitar su tama\'f1o , fijando ScrollBackMode a Falso cuando BufferSize excedi\'f3 alg\'fan tama\'f1o.
+\par }{\f2\fs18\cf6 
+\par Property OnScrBckModeChange: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando la propiedad de ScrollBackMode se cambia
+\par }{\f2\fs18\cf6 
+\par Property OnSendChar: TKeyPressEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando el usuario aprieta una tecla de car\'e1cter y ScrollBackMode es Falso.
+\par }{\f2\fs18\cf6 
+\par Property OnUserDataChange: TAfTRMLineEvent;
+\par }{\i\f2\fs18\cf1 TAfTRMLineEvent = procedure (Sender: TObject; Line: Integer) of object;
+\par }{\f1\fs20\cf1 
+\par Ocurre cuando UserData se cambia. La l\'ednea contiene n\'famero de l\'ednea en uso.
+\par }{\f2\fs20\cf1 \page }{\f2\fs20\cf1 {\pict\wmetafile8\picw547\pich547\picwgoal310\pichgoal310 \picscalex97\picscaley97 
+010009000003f40000000000d200000000000400000003010800050000000b0200000000050000000c02180018000400000007010400d2000000430f2000cc000000180018000000000018001800000000002800000018000000180000000100040000000000200100002c1100002c11000010000000100000000000000080
+000000ff00000000008000800080000000ff00ff00ff0000800000808000000080800080808000c0c0c00000ff0000ffff000000ffff00ffffff00bbbbbbbbbbbbbbbbbbbbbbbbb0000000000000000000000bb0bba0bfbfbfb0bba0bbbb0bb0f0b0fbfbfbf0f0b0bbbb0bb0ffb0bfbfbfb0ffb0bbbb0bb000000000000000
+0000000bb0ffffffffffffffff0bba0bb0f00000000000000f0f0b0bb0ffffffffffffffff0ffb0bb0ffffffffffffffff00000bb0faaaaaaaaf00000f0bfb0bb0faffffffafffffff0fbf0bb0faffffffafffffff0bfb0bb0faf2222faf00000f0fbf0bb0faffffffafffffff0bfb0bb0faf2222fafffffff0fbf0bb0faff
+ffffaf00000f0bfb0bb0faf2faaaafffffff0fbf0bb0fafffafaffffffff00000bb0fafffaafff00000f0bba0bb0faaaaaffffffffff0f0b0bb0ffffffffffffffff0ffb0bb0000000000000000000000bbbbbbbbbbbbbbbbbbbbbbbbb04000000070101000300000000000000000000000000}}{\f2\fs18\cf1  }{
+\b\f2\fs44\cf1 TAfFileViewer
+\par }{\b\f1\fs20\cf1 Representa a un simple visor de archivo de texto ilimitado.
+\par Puede usarse para desplegar los archivos del registro de anotaciones de la ventana terminal.
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf2 Procedure CloseFile;
+\par }{\f1\fs20\cf1 cierra el archivo
+\par }{\f2\fs18\cf2 
+\par function FilePtrFromLine(Line: Integer): PChar;
+\par }{\f1\fs20\cf1 Retorna el indicador al almac\'e9n del texto para la l\'ednea especificada.
+\par }{\f2\fs18\cf2 
+\par Procedure OpenFile;
+\par }{\f1\fs20\cf1 Abre el archivo especificado en la propiedad FileName.
+\par }{\f2\fs18\cf2 
+\par procedure OpenData(const TextBuf: PChar; const TextSize: Integer);
+\par }{\f1\fs20\cf1 Abre almac\'e9n especificado por el indicador y su tama\'f1o.
+\par }{\f2\fs18\cf2 
+\par property FileName: String;
+\par }{\f1\fs20\cf1 Especifica el filename, pero no abre el archivo. 
+\par lee el m\'e9todo de OpenFile. 
+\par }{\f2\fs18\cf2 
+\par Property FileSize: DWORD; [ReadOnly] 
+\par }{\f1\fs20\cf1 Retorna el tama\'f1o del texto.}{\f1\fs20\cf12 
+\par }{\f2\fs18\cf12 
+\par }{\f2\fs18\cf2 Property ScanPosition: Integer; [ReadOnly] 
+\par }{\f1\fs20\cf1 Retorna la posici\'f3n en el texto durante la b\'fasqueda ( scan ) numerado en l\'edneas.}{\f1\fs20\cf12 
+\par }{\f2\fs18\cf12 
+\par Property ScanBlockStep: TAfCVFScanStep;
+\par }{\i\f2\fs18\cf1 TAfCVFScanStep = 1..MaxInt;
+\par }{\f1\fs20\cf1 
+\par Especifica el tama\'f1o del bloque para el evento OnScanBlock.
+\par }{\f2\fs18\cf6 
+\par }{\f2\fs18\cf12 Property UseThreadScan: Boolean;
+\par }{\f1\fs20\cf1 Cuando Verdadero (el valor por defecto) busca el n\'famero de l\'edneas ejecutando hilo separado ( thread ).}{\f1\fs20\cf6 
+\par }{\f2\fs18\cf6 
+\par property OnScanBlock: TNotifyEvent;
+\par }{\f1\fs20\cf1 Ocurre cuando el pr\'f3ximo bloque ( el tama\'f1o se especifica en ScanBlockStep) se ha buscado.
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs20\cf1 {\pict\wmetafile8\picw517\pich517\picwgoal293\pichgoal293 \picscalex97\picscaley97 
+010009000003f40000000000d200000000000400000003010800050000000b0200000000050000000c02180018000400000007010400d2000000430f2000cc000000180018000000000018001800000000002800000018000000180000000100040000000000200100002b1200002b12000010000000100000000000000080
+000000ff00000000008000800080000000ff00ff00ff0000800000808000000080800080808000c0c0c00000ff0000ffff000000ffff00ffffff00bbbbb00000000000000bbbbbbbbbb0aaaaaaaaaaaa0bbbbbbbbbbb00aaaaaaaa00bbbbbbbbbbbbbb0aaaaaa0bbbbbbbbbbbbbbbb0aaaaaa0bbbbbbbbbfffffffffffffff
+fffffffbfaaaaaaaaaaaaaaaaaaaaaaffa00000000000000000000affa00000000000000000000affa06600000000000000000affa00006600606006006060affa02006060666006006660affa00006060606006006060affa00006600060066600600affa0ff00000000000000000affa00000000000000000000affa0000
+0000000000000000affa0cccc0ccccc0ccc00000affa00000000000000000000affa00000000000000000000affa0ffffff0055555555550affa00000000000000000000affaaaaaaaaaaaaaaaaaaaaaafbffffffffffffffffffffffb04000000070101000300000000000000000000000000}}{\f2\fs18\cf1  }{
+\b\f2\fs44\cf1 TAfDataTerminal
+\par }{\b\f1\fs20\cf1 Representa una  la ventana terminal  "datos-enterado". 
+\par Es descendiente de TAfTerminal y permite conectar a un distribuidor de los datos.
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf12 Property Active: Boolean;
+\par }{\f1\fs20\cf1 Especifica el estado de la terminal. 
+\par Cuando Verdadero (el valor por defecto), el t\'e9rmino puede recibir y puede enviar los datos a trav\'e9s del distribuidor de los datos asignado.
+\par }{\f2\fs18\cf12 
+\par Property Dispatcher: TAfCustomDataDispatcher;
+\par }{\f1\fs20\cf1 Especifica al distribuidor de los datos
+\par }{\f2\fs18\cf1 \page 
+\par }{\f11\fs20\cf1 {\pict\wmetafile8\picw527\pich527\picwgoal299\pichgoal299 
+010009000003f40000000000d200000000000400000003010800050000000b0200000000050000000c02180018000400000007010400d2000000430f2000cc00000018001800000000001800180000000000280000001800000018000000010004000000000020010000c1110000c111000010000000100000000000000080
+000000ff00000000008000800080000000ff00ff00ff0000800000808000000080800080808000c0c0c00000ff0000ffff000000ffff00ffffff00bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb000000000000000000bbbbbb0ffffffffffffffff0bbbbbb0ff111111111
+111ff0bbbbbb0ffffffffffffffff0bbbbbb0f66fff66ff6fff6f0bbbbbb06ff6f6ff6f6fff6f0bbbbbb06ffff6ff6f6f6f6f0bbbbbb06ff6f6ff6f66f66f0bbbbbb0f66fff66ff6fff6f0bbbbbb0ffffffffffffffff0bbbbbb0ff111111111111ff0bbbbbb0ffffffffffffffff0bbbba0000000000000000000bbbbafff
+ffffffffff0bbbb0bbbbafffffffffffff0faab0bbbbaf11111111111f0f00b0bbbbafffffffffffff0fffb0bbbbaaaaaaaaaaaaaa000000bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb04000000070101000300000000000000000000000000}}{\f2\fs18\cf1  }{
+\b\f2\fs44\cf1 TAfPortComboBox}{\f2\fs18\cf1 
+\par }{\b\f1\fs20\cf1 \'c9sta es una caja de combo especializada que les permite a los usuarios seleccionar el puerto de serie deseado.
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf2 Property ComNumber: Word;
+\par }{\f1\fs20\cf1 Especifica el n\'famero de puerto de serie
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf12 Property ComPort: TAfComPort;
+\par }{\f1\fs20\cf1 Especifica el componente de TAfComPort
+\par }{\f2\fs18\cf12 
+\par property Options: TAfPortCtlOptions;
+\par }{\i\f2\fs18\cf1 TAfPortCtlOptions = set of (pcCheckExist, pcDisableOpen, pcHighlightOpen);
+\par }{\f1\fs20\cf1 
+\par Especifica la conducta de este componente:
+\par pcCheckExist\tab \tab - remueve la no-existencia del puerto de serie de la lista.
+\par pcDisableOpen\tab \tab - remueve el puerto de serie actualmente abierto de la lista.
+\par pcHighlightOpen\tab - resalta el puerto de serie actualmente abierto en la lista descendiente.
+\par }{\f2\fs18\cf12 
+\par Property MaxComPorts: SmallInt;
+\par }{\f1\fs20\cf1 Especifica el n\'famero m\'e1ximo de puertos de serie en el combo lista.}{\f2\fs18\cf1 
+\par 
+\par }{\f11\fs20\cf1 {\pict\wmetafile8\picw527\pich527\picwgoal299\pichgoal299 
+010009000003f40000000000d200000000000400000003010800050000000b0200000000050000000c02180018000400000007010400d2000000430f2000cc00000018001800000000001800180000000000280000001800000018000000010004000000000020010000c1110000c111000010000000100000000000000080
+000000ff00000000008000800080000000ff00ff00ff0000800000808000000080800080808000c0c0c00000ff0000ffff000000ffff00ffffff00bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbfffffffffffffffffffbbbba9aaaaaaaaaaaaaaaaafbbbbaf996699966996
+9996afbbbbaf9699696996969996afbbbbaf9699996996969696afbbbbaf9699696996966966afbbbbaf9966999669969996afbbbbaf99a9999999999999afbbbbaf9a0a911111111999afbbbbaf99a9999999999999afbbbbaf9999999999999999afbbbbaf99a9999999999999afbbbbaf9a0a911111111199afbbbbaf99
+a9999999999999afbbbbaf9999999999999999afbbbbaf9999999999999999afbbbbafa11111111affffff9fbbbbaab11111111baaaaaaabbbbbbbb11111111bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb04000000070101000300000000000000000000000000}}{\f2\fs18\cf1  }{
+\b\f2\fs44\cf1 TAfPortRadioGroup
+\par }{\b\f1\fs20\cf1 \'c9ste es un grupo de radio especializado que les permite a los usuarios seleccionar el puerto de serie deseado.
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf2 Property ComNumber: Word;
+\par }{\f1\fs20\cf1 Especifica el n\'famero de puerto de serie
+\par }{\f2\fs18\cf2 
+\par Procedure UpdatePortList;
+\par }{\f1\fs20\cf1 actualiza el grupo de radio.
+\par }{\f2\fs18\cf1 
+\par }{\f2\fs18\cf12 property ComPort: TAfComPort;
+\par }{\f1\fs20\cf1 Especifica el componente TafComPort.
+\par }{\f2\fs18\cf12 
+\par property Options: TAfPortCtlOptions;
+\par }{\i\f2\fs18\cf1 TAfPortCtlOptions = set of (pcCheckExist, pcDisableOpen, pcHighlightOpen);
+\par }{\f1\fs20\cf1 
+\par Especifica la conducta de este componente:
+\par pcCheckExist\tab \tab - desactiva la no-existencia del \'edtem del puerto de serie.
+\par pcDisableOpen\tab \tab - desactiva el \'edtem del puerto de serie actualmente abierto.
+\par pcHighlightOpen\tab - resalta el \'edtem del puerto de serie actualmente abierto.
+\par }{\f2\fs18\cf12 
+\par property MaxComPorts: SmallInt;
+\par }{\f1\fs20\cf1 Especifica el n\'famero m\'e1ximo de puertos de serie en el grupo de radio.
+\par }{\f2\fs18\cf1 
+\par 
+\par }}
